@@ -26,10 +26,38 @@
       </div>
     </nav>
 
-    <main class="hero">
-      <h1>Welcome to ZaqApp</h1>
-      <p>this is a testing app for PWA.</p>
+    <div
+      id="offlineBanner"
+      style="
+        display: none;
+        background: red;
+        color: white;
+        text-align: center;
+        padding: 10px;
+      "
+    >
+      You are currently offline.
+    </div>
+
+    <main>
+      <section class="hero">
+        <h1>Welcome to ZaqApp</h1>
+        <p>this is a testing app for PWA.</p>
+      </section>
+      <section class="container" style="margin-top: 2rem">
+        <h2>Select a Post</h2>
+
+        <select id="postDropdown">
+          <option value="">Choose a post</option>
+        </select>
+
+        <div
+          id="postContent"
+          style="margin-top: 1rem; border: 1px solid #ccc; padding: 1rem"
+        ></div>
+      </section>
     </main>
+
     <footer>
       <p>© 2025 ZaqApp. All rights reserved.</p>
     </footer>
